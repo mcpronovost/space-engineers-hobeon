@@ -10,8 +10,6 @@
       <DisplayName>[OKP] Circuit Intégré MK1</DisplayName>
       <Icon>Textures\okp\Components\okp_integratedcircuit_mk1.dds</Icon>
 	    <Prerequisites>
-        <Item Amount="3" TypeId="Component" SubtypeId="Puce" />
-        <Item Amount="400" TypeId="Ingot" SubtypeId="Cobalt" />
         <Item Amount="3000" TypeId="Ingot" SubtypeId="Iron" />
       </Prerequisites>
       <Result Amount="1" TypeId="Component" SubtypeId="OkpIntegratedCircuitMK1" />
