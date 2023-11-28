@@ -1,0 +1,31 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CategoryClasses>
+
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>[OKP] Blocs MK1</DisplayName>
+            <Name>OkpMK1</Name>
+            <StrictSearch>true</StrictSearch>
+            <ItemIds>
+                <string>Refinery/OkpLargeRefineryMK1</string>
+                <string>Assembler/OkpLargeAssemblerMK1</string>
+                <string>OxygenGenerator/OkpOxygenGeneratorMK1</string>
+                <string>BatteryBlock/OkpLargeBatteryMK1</string>
+            </ItemIds>
+        </Category>
+
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Name>Production</Name>
+            <ItemIds>
+                <string>Refinery/OkpLargeRefineryMK1</string>
+                <string>Assembler/OkpLargeAssemblerMK1</string>
+                <string>OxygenGenerator/OkpOxygenGeneratorMK1</string>
+            </ItemIds>
+        </Category>
+
+    </CategoryClasses>
+</Definitions>

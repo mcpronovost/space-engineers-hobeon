@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>SpawnConditions-StationSpace</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [SpaceRandomEncounter:true]
+
+        [FactionOwner:TUAN]
+
+        [ForceStaticGrid:true]
+
+        [UseRemoteControlCodeRestrictions:true]
+        [RemoteControlCode:TUANStation]
+        [RemoteControlCodeMinDistance:1000]
+
+      </Description>
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

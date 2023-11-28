@@ -1,0 +1,55 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>StoreProfile-Station</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Store]
+
+        [FileSource:StoreItems.xml]
+
+        [MinOfferItems:5]
+        [MaxOfferItems:8]
+        [MinOrderItems:4]
+        [MaxOrderItems:8]
+
+        [ItemsRequireInventory:false]
+        [AddedItemsCombineQuantity:true]
+        [AddedItemsAveragePrice:true]
+        [EqualizeOffersAndOrders:true]
+
+        //Offers - Sell To Player
+
+        [Offers:Component/RadioCommunication]
+        [Offers:Component/Construction]
+        [Offers:Component/MetalGrid]
+        [Offers:Component/InteriorPlate]
+        [Offers:Component/SteelPlate]
+        [Offers:Component/Display]
+        [Offers:Component/BulletproofGlass]
+        [Offers:Component/Thrust]
+        [Offers:Component/Computer]
+        [Offers:Component/Motor]
+        [Offers:Component/OkpIntegratedCircuitMK1]
+        [Offers:Ore/Magnesium]
+        [Offers:Ore/Silicon]
+        [Offers:Ore/Iron]
+
+        //Orders - Buy From Player
+
+        [Orders:Ingot/Iron]
+        [Orders:Ingot/Nickel]
+        [Orders:Ingot/Magnesium]
+        [Orders:Ingot/Silicon]
+        [Orders:Ingot/Silver]
+
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Manipulation-StationGroup</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation Group]
+
+        [ManipulationProfiles:MES-Manipulation-RivalAi]
+        [ManipulationProfiles:Manipulation-StationSetup]
+        [ManipulationProfiles:indestructible]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Manipulation-StationSetup</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [IgnoreShieldProviderMod:true]
+
+        [ShipyardSetup:false]
+
+        [SetDoorsAnyoneCanUse:true]
+        [SetStoresAnyoneCanUse:true]
+        [SetConnectorsTradeMode:true]
+
+      </Description>
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

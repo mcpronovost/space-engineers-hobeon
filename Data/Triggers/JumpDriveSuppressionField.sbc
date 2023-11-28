@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>OkpTriggerJumpDriveSuppressionFieldOn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+        [Type:PlayerNear]
+  
+        [UseTrigger:true]
+        [TargetDistance:800]
+        [MaxActions:1] 
+        
+        [Actions:OkpActionJumpDriveSuppressionFieldOn]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>OkpTriggerJumpDriveSuppressionFieldOff</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+
+        [MinCooldownMs:10000]
+        [MaxCooldownMs:10001]
+
+        [StartsReady:true]
+        [MaxActions:-1]
+        [Actions:OkpActionJumpDriveSuppressionFieldOff]
+        
+        [DisableNamedTriggerOnSuccess:OkpTriggerJumpDriveSuppressionFieldOff]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>OkpActionJumpDriveSuppressionFieldOn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+      
+        [UseChatBroadcast:true]
+        [ChatData:RAI-ExampleChatProfile]
+
+        [EnableBlocks:true]
+        [EnableBlockNames:[Jump Drive Suppression Field]]
+        [EnableBlockStates:On]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>OkpActionJumpDriveSuppressionFieldOff</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [EnableBlocks:true]
+        [EnableBlockNames:[Jump Drive Suppression Field]]
+        [EnableBlockStates:Off]
+      </Description>
+    </EntityComponent>
+
+
+  </EntityComponents>
+</Definitions>

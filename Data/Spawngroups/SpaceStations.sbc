@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>OkpStation1</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:SpawnConditions-StationSpace]
+        [ReplenishSystems:true]
+        [ManipulationGroups:Manipulation-StationGroup]
+      	[SpaceCargoShip:true]
+        [SpaceCargoShipChance:70]
+        [FactionOwner:TUAN]
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="OkpSpaceStation1">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>Behavior-Station</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>
